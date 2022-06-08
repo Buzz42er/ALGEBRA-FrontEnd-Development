@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+/*selektori*/
+
+p:first-child {
+    color: red;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
