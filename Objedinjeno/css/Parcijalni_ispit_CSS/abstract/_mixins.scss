@@ -1,0 +1,44 @@
+@mixin background{
+    background-image: url("./image/blur-clean.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@mixin flexbox {
+    display: flex;
+    padding: 0;
+    height: 100vh;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@mixin box_font {
+    letter-spacing: 2px;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+@mixin box_size{
+    width: 250px;
+    height: 200px;
+    padding: 40px 10px 45px 10px;
+    border: 5px solid $border_color; 
+    box-sizing: border-box;
+    @include box_font;
+}
+@mixin box1 {
+    @include box_size;
+    background-color: $box_background1;
+}
+@mixin box2 {
+    @include box_size;
+    background-color: $box_background2;
+}
+@mixin box3 {
+    @include box_size;
+    background-color: $box_background3;
+}

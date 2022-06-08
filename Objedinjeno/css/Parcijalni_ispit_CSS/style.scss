@@ -1,0 +1,32 @@
+@import './abstract/mixins';
+@import './base/colors';
+@import './base/reset';
+
+body {
+  @include background;
+  @include flexbox;
+  > div:first-child {
+    animation: drop_animation 1.5s linear;
+    animation-fill-mode: backwards;
+    @include box1;
+  }
+  > div:nth-child(2) {
+    animation: drop_animation 1.5s linear 1.5s;
+    animation-fill-mode: backwards;
+    @include box2;
+  }
+  > div:last-child {
+    animation: drop_animation 1.5s linear 3s;
+    animation-fill-mode: backwards;
+    @include box3;
+  }
+}
+
+@keyframes drop_animation {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="tablink" onclick="openPage('html_course', this, 'red')"id="defaultOpen">HTML</button>
+    <button class="tablink" onclick="openPage('css_course', this, 'green')" >CSS</button>
+    <button class="tablink" onclick="openPage('js_course', this, 'blue')">JavaScript</button>
+
+    <div id="html_course" class="tabcontent">
+        <h3>HTML</h3>
+        <p>Parcijalni ispit:</p>
+        <button class="button" onClick="window.open('./html/Parcijalni_ispit_HTML/index.html');">
+            <span class="icon">Otvori</span>
+       </button>
+    </div>
+
+    <div id="css_course" class="tabcontent">
+        <h3>CSS</h3>
+        <p>Prezentacija:</p>
+
+        <p>Parcijalni ispit:</p>
+        <button class="button" onClick="window.open('./css/Parcijalni_ispit_CSS/index.html');">
+            <span class="icon">Otvori</span>
+       </button>
+    </div>
+
+    <div id="js_course" class="tabcontent">
+        <h3>Javascript</h3>
+        <p>wip</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html> 
