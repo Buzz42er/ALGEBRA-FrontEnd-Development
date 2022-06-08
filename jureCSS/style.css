@@ -1,0 +1,1057 @@
+/*CSS file
+Cascading Style Sheets
+Look and feel of your site
+*/
+
+/*this is a comment*/
+
+/*this is how you import google font inside a css file*/
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+/*font-family: 'Flow Circular', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+/*for this font copy this ---> font-family: 'Flow Circular', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/*font-family: 'Comfortaa', cursive;*/
+
+/*Basic*/
+p /*selector*/ {
+    color/*property*/: rgb(118, 190, 202)/*value*/;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;/*gets content inline when there is room for it otherwise makes them go in another row*/
+    margin: 0;
+    
+}
+
+img {
+
+    margin: 10px;
+    width: 250px;
+    height: 122px;
+    border-radius: 5px;
+    color: aliceblue;
+
+}
+
+div {
+
+    margin: 10px;
+    /*box has width and height that you can change like this*/
+    /*min and max width and hight -> that way your box can be standardised for multiple screens, it looks good everywere*/
+    width: 250px;
+    height: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 103, 150);
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.external {
+    /*text, mostly*/
+    /*this is how you manipulate background color of the box(element)*/
+    background-color: rgb(31, 82, 141);
+    color: rgb(252, 252, 252); /*text color*/
+    font-family: "Audiowide", sans-serif;
+    font-weight: normal; /*100-900*/
+    font-style: italic; /*style*/
+    font-variant:normal;/*small-caps*/
+    /*text-align: center; right; left;*/
+    /*vertical-align: middle; top; bottom; // baseline; sub; super; -10px*/
+    text-decoration: overline underline ;/*line-through; none; inherit; blink(This value is valid but is deprecated and most browsers ignore it.)*/
+    text-shadow: -1px -2px 0.5em rgb(124, 124, 124);/*blur all ower*/
+    /*
+    first – the X-coordinate
+    second – the Y-coordinate
+    third – the blur radius
+    0.5em - blur all over
+    grey – the color of the shadow
+    */
+
+}
+
+
+
+#id /*id selector*/ {
+
+    background-color: chocolate;
+    color: aliceblue;
+    text-decoration: blink; 
+      
+
+}
+
+.class {
+
+    background-color:rosybrown;
+    color: aliceblue;
+}
+
+#id .firstClassInId {
+    background-color: rgb(201, 157, 37);
+    color: rgb(255, 255, 255);
+}
+
+
+/*problem - pitat Vjerana
+.alignDiv {
+    background-color: aquamarine;
+    display: inline-table;
+    align-items: center;
+}
+
+.divToAlign {
+    background-color: rgb(51, 143, 143);
+    height: 20px;
+    width: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+*/
+
+/*Working with Text*/
+.indent{
+
+    font-family: 'Flow Circular', cursive;
+    background-color: aquamarine;
+    text-indent: 25px;
+}
+
+.indent em {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+
+.transform {
+    background-color: darksalmon;
+    color:floralwhite ;
+    text-transform: capitalize;/*capitalizes first character of every word*/
+}
+
+.upper {
+    background-color: darksalmon;
+    color:floralwhite ;
+    text-transform: uppercase;
+}
+
+.lower {
+    background-color: darksalmon;
+    color:floralwhite ;
+    text-transform: lowercase;
+}
+
+.letterSpacing {
+    background-color: lightgrey;
+    color: rgb(160, 76, 66);
+    width: 500px;
+    display:table;
+    
+
+
+}
+
+.letterSpacing p.normal {
+    
+    letter-spacing: normal;
+}
+
+.letterSpacing p.positive {
+    letter-spacing: 4px;
+
+}
+
+.letterSpacing p.negative {
+    letter-spacing: -1px;
+}
+
+.wordSpacing {
+    background-color: lightgrey;
+    color: rgb(160, 76, 66);
+    width: 500px;
+    display:table;
+    /*px, pt, pc, cm, mm, inches, em, and ex*/
+
+
+}
+
+.wordSpacing p.normal {
+    
+    word-spacing: normal;
+}
+
+.wordSpacing p.positive {
+    word-spacing: 15px;
+
+}
+
+.wordSpacing p.negative {
+    word-spacing: -4px;
+}
+
+
+/*Properties*/
+
+/*BOX model*/
+/*order of box properties = top -> right -> bottom -> left*/
+
+.bproperties {
+    background-color: skyblue;
+    color: salmon;
+}
+
+.bproperties p.textBorder {
+    border: 5px dashed salmon; /*width style color*/
+    padding: 10px;
+
+}
+
+.bgimage {
+    
+    background-image: url("/slike/velikaSlika.jpg");
+    /*background-repeat: repeat-x;
+      background-repeat: repeat-y;*/
+    background-attachment: fixed;
+}
+
+.bgimage2 {
+    
+    background-image: url("/slike/velikaSlika.jpg");
+    background-attachment: scroll;
+}
+/*List style*/
+.listStyle {
+    background-color: darksalmon;
+    color:rgb(160, 76, 66);
+    width: 450px;
+
+}
+
+.listStyle .lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+.listStyle .circle {
+    list-style-type: circle;
+}
+
+.listStyle .square {
+    list-style-type: square;
+}
+
+.listStyle .position {
+    list-style-image: url("/slike/miniSlika.jpg");
+    list-style-position: inside;
+}
+
+.listStyle .all {
+    list-style: square outside none; /*tyle; position; image*/
+}
+/*Table style*/
+.table {
+    background-color: rgb(31, 82, 141);
+    color: rgb(252, 252, 252);
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.table .first {
+    caption-side: top; /*bottom*/
+    
+}
+
+.table .second {
+    border-collapse: separate;
+    empty-cells: show; /*hide*/
+}
+/*Table layout*/
+.tableSecond {
+    background-color: aliceblue;
+    color: darkcyan;
+    display: block;
+    height: 200px;
+    width: 350px;
+    
+
+}
+
+.tableSecond table {
+    border-collapse: separate;
+    border: 1px solid gray;
+    width: 100%;
+    
+}
+
+.tableSecond td {
+    border: 1px solid gray;
+}
+
+.tableSecond .auto {
+    table-layout: auto;/*The table layout is set to auto by default.*/
+
+}
+
+.tableSecond .fixed {
+    table-layout: fixed;
+}
+
+
+/*Link style*/
+
+/*
+a:link - defines the style for normal unvisited links
+a:visited - defines the style for visited links
+a:active - a link becomes active once you click on it
+a:hover - a link is hovered when the mouse is over it
+*/
+
+.links {
+    background-color: azure;
+    color: aquamarine;
+}
+
+.links .hover a:hover { /*:hover is 1 of 4 pseudo selectors*/
+    color:brown;
+    text-decoration: none; /*removes all decorations(this time just underline)*/
+    /*
+    border:none - removes border from images with links
+    outline:none - removes the dotted border on clicked lines in IE
+    */
+}
+
+.mouseCursor {
+    background-image: url("/slike/mouseCursor.jpg");
+    background-position: center; /* Center the image */
+    background-size: contain; /* Resize the background image to /cover/ the entire container, you can also /contain/ it, so that full picutre is in side */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 200px;
+    width: 350px;
+    color: darkorange;
+}
+
+.mouseCursor .cursorHelp {
+    cursor: help;/*many more*/
+    
+}
+
+/*Positioning and Layout*/
+
+.displayProperties {
+    background-color: #8888884b;
+    color: darkturquoise;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    
+}
+.displayProperties .block{
+    color: darkturquoise;
+    display: block;
+    padding: 5px;
+}
+.displayProperties .block span {
+    display: block;
+}
+
+.displayProperties .inline {
+    color: darkturquoise;
+    width: 650px;
+
+    
+}
+
+.displayProperties .inline span{
+    display: inline;
+
+}
+
+.displayProperties .none {
+    color: darkturquoise;
+}
+
+.displayProperties .none span {
+    display: none;
+    
+}
+
+/*
+There are plenty of other display values, 
+such as list-item, table, table-cell, 
+table-column, grid, etc. 
+Just play with values to see the difference.
+*/
+
+.visibility {
+    background-color: sienna;
+    color: azure;
+}
+
+.visibility .hidden {
+    background-color: dimgray;
+    visibility: hidden; /*visible*/
+}
+.visibility p{
+    color: azure;
+}
+
+.position {
+    background-color: dimgray;
+    display: block;
+    
+}
+
+.position .static {
+    position: static; /*Static positioned elements are not affected by the top, bottom, left, and right properties.*/
+    top:30px;
+    right: 5px;
+    color: red;
+}
+
+.position .fixed {
+    position: fixed;
+    top:30px;
+    right: 5px;
+    
+}
+
+.position .relative {
+    position: relative;
+    background-color: green;
+    color: white;
+    top: 5px;
+    left: 5px;
+    /*This value cannot be used for table cells, 
+    columns, column groups, rows, row groups, or captions.*/
+}
+
+
+.position .absolute {
+    color:burlywood;
+    /*
+    An absolute position element is positioned 
+    relative to the first parent element that has 
+    a position other than static. If no such 
+    element is found, the containing block is <html>.
+
+    Absolutely positioned elements are removed from 
+    the normal flow. The document and other elements 
+    behave like the absolutely positioned element 
+    does not exist.
+    */
+}
+
+/*float*/
+.floating {
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: none;
+    align-items: none;
+    margin: 10px 0;
+    border-radius: 0%;
+    background-color: #8888884b;
+
+}
+
+.floating div {
+    background-color: rgb(68, 133, 190);
+    width: 300px;
+    height: 250px;
+}
+
+
+
+.floating .floatnexttoeachother {
+    
+    display: block;
+}
+
+.floating .float img {
+    float: right;
+}
+
+.floating .floatnexttoeachother img {
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.floating .floatnexttoeachother p {
+    width: 240px;
+    float: left;
+}
+
+.floating .floatclean {
+    background-color: rgb(68, 133, 190);
+    display: block;
+}
+
+.floating .floatclean .floati {
+    float: right;
+}
+.floating .floatclean .cleari {    
+    clear: both;
+}
+
+.floating .floatOverflow {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    float: left;
+    overflow: scroll; /*overflow:auto; --> gives scroll bar if needed*/
+    /*default - visible*/
+}
+
+.z_index {
+    display: block;
+    color: aliceblue;
+    
+}
+
+.z_index .yellow {
+    background-color: darkgoldenrod;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    position: relative;
+    
+}
+
+.z_index .red {
+    background-color: crimson;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-top: -35px;
+    margin-left: 35px;
+    z-index: 2;
+    /*
+    The z-index works only on positioned elements 
+    (position:absolute, position:relative, or position:fixed).
+    */
+}
+
+/*CSS3*/
+/*
+Introduction:
+Some of the most significant new features are:
+Border radius - allows us to create rounded corners for elements.
+Border images - allows us to specify an image as the border around an element.
+Multiple backgrounds - applies multiple backgrounds to elements.
+Animations and effects, and much more!
+
+Box Shadow
+With the box-shadow property, you can attach one or more shadows to 
+an element by specifying values for color, size, blur, and offset.
+
+Gradients
+CSS3 gradients allow us to set the background color of the element to 
+a gradient. Two types of gradients are available: Linear and Radial.
+
+Transforms allow you to rotate, scale, move, and skew elements.
+
+Another popular feature is Transitions which allows you to animate 
+from one CSS property value to another. You can combine it with 
+transforms and animate the element's position, rotation, or scale.
+
+The property attracting the most attention is Animations.
+CSS Animations have their own specifications, and they allow you 
+to create keyframes, set duration, easing, and more.
+*/
+
+.borderr {
+    border-radius: 20px;
+    background-color: greenyellow;
+    color: green;
+}
+
+.border0 {
+    background-color: orangered;
+    border-radius: 0 20px 20px 0;
+    color: aliceblue;
+}
+/*The value of border-radius can also be specified in percentages.*/
+
+.bCircle {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: blue;
+    color: aliceblue;
+
+}
+
+
+.box-shadow {
+/*
+- The first length for the horizontal offset will cast the shadow to 
+the right of the box (required)
+- The second length is for the vertical offset that will cast the 
+shadow to below the box (required)
+- The color of the shadow (optional)
+
+Besides color, there are also two optional values 
+for the box-shadow element, which are blur and spread.
+
+negative:
+horizontal offset - the shadow will be to the left of the box
+vertical offset - the shadow will be above the box
+blur radius - negative values are not allowed
+spread radius - negative values will cause the shadow to shrink
+
+box-shadow: horizontal(right) / vertical(down) / blur / spread / color;
+
+*/
+    box-shadow: 10px 10px 5px -5px #888888;
+    color: aliceblue;
+}
+
+.inner-shadow {
+    /*
+    You can simultaneously create 
+    inner and outer shadows by separating each shadow with a comma.
+    inset for inner nothing for outer
+    */
+
+    color: aliceblue;
+    box-shadow: inset 10px 10px 7px -5px #27272796;
+    /*code under this comment is just for look*/
+    border-radius: 10px;
+    
+}
+
+.allShadow {
+    box-shadow: inset 10px 10px 7px -5px #27272796,
+                inset -10px -10px 7px -5px #27272796,
+                0 0 10px 7px  #27272796;
+
+}
+
+.transparentEffect {
+    padding: 50px 0;
+    min-width: 100%;
+    border-radius: 0;
+    display: block;
+
+/*
+Before CSS3, transparent background images were used to create transparency effects. The new features of CSS3 now make it easier to create transparency effects.
+
+CSS supports color names, hexadecimal, and RGB colors.
+In addition, CSS3 introduces the following:
+
+RGBA Colors
+RGBA color values are an extension of RGB color values with an alpha channel, which specifies the opacity for a color.
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+HSL (Hue, Saturation, Lightness) Colors
+An HSL color value is specified with: hsl(hue, saturation, lightness).
+Hue is a degree on the color wheel ranging from 0 to 360
+0 (or 360) is red, 120 is green, 240 is blue.
+Saturation is a percentage value: 100% is the full color.
+Lightness is also a percentage; 0% is dark (black) and 100% is white. HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color (just like RGBA).
+
+In the example below, a transparent glass menu bar is created with CSS3.
+*/
+
+}
+
+.transparentEffect ul {
+    background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+     box-shadow: 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.transparentEffect ul li {
+    display: inline-block;
+}
+
+.transparentEffect ul li a {
+    padding: 10px; 
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+}
+
+.transparentEffect a:hover {
+    color: #58d1e3;
+    font-family: 'Flow Circular', cursive;
+}
+
+.textShadow {
+    /*
+    text-shadow: x-offset y-offset blur color;
+    */
+    text-shadow: 5px 10px 2px #93968f,
+    -3px 6px 5px #58d1e3;
+
+
+}
+/*
+The CSS pseudo-classes allow us to style elements, 
+or parts of elements, that exist in the document 
+tree without using JavaScript or any other scripts. 
+A pseudo-class starts with a ":" (colon).
+The most commonly used pseudo-classes are :first-child 
+and :last-child.
+
+The :first-child pseudo-class matches an element 
+that is the first child element of some other element.
+*/
+#PseudoClasses {
+    display: flex;
+    flex-wrap: wrap;    
+    
+
+}
+
+#PseudoClasses p {
+    margin: 0;
+}
+
+#PseudoClasses p:first-child {
+    color: yellowgreen;
+    
+}
+
+/*
+::first-line - the first line of the text in a selector
+::first-letter - the first letter of the text in a selector
+::selection - selects the portion of an element that is selected by a user
+::before - inserts some content before an element
+::after - inserts some content after an element
+*/
+
+.firstLine {
+    display: block;
+}
+
+.firstLine::first-line {
+    color: #68d127;
+}
+
+.pseudoBefore p::before { /*::after*/
+    content: url("/slike/miniSlika.jpg");
+}
+
+/*spliting a word ahalf*/
+.wrap {
+    display: block;
+    word-wrap: break-word;
+}
+
+
+/*
+FontFaces
+
+The @font-face rule allows custom fonts to be loaded into a webpage.
+With the help of this rule, designs are no longer limited to the fonts that are installed on a user's computer.
+
+In Internet Explorer 8 and earlier, the URL must point to an Embedded OpenType (eot) file, while Firefox, Chrome, etc. support True Type Fonts (ttf) fonts and OpenType Fonts (otf).
+
+Each form of the font family must be declared using the @font-face rule. In the example below, a custom font called "Delicious" is loaded and used for the heading.
+
+Internet Explorer has a built-in bug when multiple @font-face rules are defined. Using #iefix as shown below fixes the problem:
+*/
+
+@font-face {
+    font-family: Delicious;
+    src: url('delicious-Roman.otf');
+}
+/*this is how you define new font family with @font-face*/
+
+.fontFace{
+    font-family: Delicious;
+}
+
+
+/*Gradients & Backgrounds*/
+
+.linearGradients {
+    background: -webkit-linear-gradient(DeepSkyBlue, DarkBlue);
+    /*You can use color names, Hex values, RGB, or HSL colors to define the gradient color.*/
+}
+
+.multipleGradients {
+    background: -webkit-linear-gradient(left, DeepSkyBlue 30%, red 50%, DarkBlue 80%);
+    /*looks best without interference*/
+    /*sharp line if 2 have same color stop value*/
+    /*direction of the gradient can be deffined at the beginning of the parentheses*/
+}
+
+.from-side-to-side {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 0;
+    /*body margin needs to be 0*/
+    /*must till here*/
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.596);
+    /*i like shadows, they make stuff more real*/
+}
+
+/*background: radial-gradient(position, shape or size, color-stops);*/
+
+.background-clip {
+    width: 100%;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 0;
+    /*works with images too*/
+    
+}
+
+.background-clip div {
+    background: #58d1e3;
+    border: 3px dotted red;
+    padding: 20px;
+    
+}
+
+.background-clip .first {
+    
+    background-clip: padding-box;
+    
+}
+
+.background-clip .second {
+    
+    background-clip: content-box;
+    
+}
+
+.MultipleBackgrounds {
+    width: 350px;
+    height: 200px;
+    background-image: url("http://www.sololearn.com/uploads/css_logo.png"), url("http://www.sololearn.com/uploads/better-code.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+} 
+
+.MultipleBackgrounds2 {
+    background: url("http://www.sololearn.com/uploads/css_logo.png") right top no-repeat, 
+    url("http://www.sololearn.com/uploads/better-code.jpg") left top no-repeat; 
+    width: 350px;
+    height: 200px;
+}
+
+.opacity {
+    width: 400px;
+}
+
+
+#img1 {
+    opacity: 1;
+}
+#img2 {
+    opacity: 0.5;
+}
+#img3 {
+    opacity: 0.25;
+}
+
+/*Transitions & Transforms*/
+
+.transitions {
+    transition: width 0s;
+
+}
+
+.transitions:hover {
+    width: 450px;
+}
+
+.transforms:hover {
+    transform: rotate(10deg); /*for up go negative -> -10deg*/
+}
+
+.translate:active {
+    transform:translate(100px,50px);
+}
+
+.skew:active {
+    transform:skew(-10deg);
+}
+
+.scale:hover {
+     transform: scale(0.7, 0.8);
+}
+
+.multipletrans:hover {
+    transform: rotate(45deg) translate(100px);
+
+}
+
+/*Keyframes hold the styles the element will have at certain times*/
+.keyframes:hover {
+        /*this under is for keyframes, animation*/
+        /*this two are must for animation*/
+        animation-name: colorchange;
+        animation-duration: 1s ;
+}
+
+/*if animation name does not mach any keyframe atribute animation will not execute*/
+@keyframes colorchange {
+    0% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
+}
+
+/*
+animation-timing-function
+ease - specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - specifies an animation with the same speed from start to end
+ease-in - specifies an animation with a slow start
+ease-out - specifies an animation with a slow end
+ease-in-out - specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+*/
+
+.animation:active {
+    animation-name: somename;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;/*infinite is one of the values, don't use 0, it will never start*/
+    animation-direction: reverse;
+/*
+normal - the default value, which means it plays forward from 0 % to 100%.
+reverse - plays the keyframe in an opposite direction from 100 % to 0%
+alternate - the animation first runs forward, then backward, then forward.
+alternate-reverse - the animation first runs backward, then forward, then backward.
+*/
+}
+
+@keyframes somename {
+    
+    0% {
+        background-color: yellowgreen;
+        transform: rotate(10deg);
+        transform: scale(0.7, 0.8);
+        transform:skew(-10deg);
+        }
+        
+    100% {
+        background-color: white;
+        transform: rotate(-10deg);
+        transform: scale(0.8, 0.9);
+        transform:skew(10deg);
+        }
+}
+
+.alltreed {
+    width: 100%;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 0;
+}
+
+.transformsX:hover {
+    transform: rotateX(150deg);
+    background-color: #58d1e3;
+    
+}
+
+.transformsY:hover {
+    transform: rotateY(150deg);
+    background-color: #68d127;
+    
+}
+
+.transformsZ:hover {
+    transform: rotateZ(150deg);
+    background-color: aquamarine;
+}
+
+.transformd:active {
+    transform: translate3d(-20px, 4em, 10px);
+    background-color: red;
+}
+
+.perspective {
+    perspective: 100px;
+    text-align: center;
+}
+
+.perspective .divinside:active {
+    text-align: center;
+    transform: rotateX(45deg);
+    background-color: #58d1e3;
+}
+
+/*CSS filters*/
+
+
+
+
+.drop-shadow:hover {
+    background-color: #58d0e3;
+    color: black;
+    filter:drop-shadow(0 0  5px rgba(49, 49, 49, 0.575)) /*width w and height h with blur b and color c*/
+}
+
+/*Grayscale*/
+.GrayScale .filtered {
+    filter: grayscale(100%);
+}
+
+/*Sepia */
+.Sepia .filtered {
+    filter: sepia(100%);
+}
+
+.saturate .filtered {
+    filter: saturate(50%);
+}
+
+.hue-rotate .filtered {
+    filter: hue-rotate(180deg);
+}
+
+.invert .filtered {
+    filter: invert(70%);
+}
+
+.opacity .filtered {
+    filter: opacity(70%);
+}
+
+.brightness .filtered {
+    filter: brightness(50%);
+}
+
+.contrast .filtered {
+    filter: contrast(150%);
+}
+
+.blur .filtered {
+    filter:blur(5px);
+  }
+
+  /*
+  viewport height
+  vh
+  A height of 100vh corresponds to the maximum possible viewport 
+  height. Since the initial viewport height is smaller, the body 
+  element with a min-height of 100vh initially exceeds the viewport 
+  height regardless of its content.
+
+  line-hight
+  The line-height property specifies the height of a line - of text 
+  like one row of text. Note: Negative values are not allowed.
+
+  */

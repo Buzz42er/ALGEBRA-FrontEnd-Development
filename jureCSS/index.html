@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--Basic-->
+    <!--this is embedded/internal CSS-->
+    <style>
+        .embedded {
+            
+            color: aliceblue;
+            background-color: rgb(21, 100, 100);
+            
+            
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--this is how you import google font in html file-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+</head>
+
+<body>
+
+<!--Working with Text-->    
+    <div class="inline" style="
+    
+    color:rgb(148, 93, 11); 
+    background-color: blanchedalmond;
+    
+    
+    ">
+
+    <h3>Inline CSS</h3>
+    <!--this is inline css-->
+    </div>
+    <div class="embedded">
+        <h3>Embedded/Internal CSS</h3>
+    </div>
+
+    <div class="external">
+
+        <h2>External CSS</h2>
+
+    </div>
+
+    <div id="id">
+
+        <h3>Id slector</h3>
+        <p class="firstClassInId">Class in ID</p>
+
+    </div>
+
+    <div class="class">
+
+        <h3>Class selector</h3>
+
+    </div>
+<!--Problem - pitat Vjerana
+    <div class="alignDiv">
+
+        <div class="divToAlign"></div>
+
+    </div>
+-->
+
+<div class="indent">
+    <p><em>this tekst will be indented</em> <br>
+        asdf assdf assgd fas</p>
+</div>
+
+<div class="transform">
+    some transform
+</div>
+
+<div class="upper">
+    some upper
+</div>
+
+<div class="lower">
+    SOME lower
+</div>
+
+<div class="letterSpacing">
+    <p class="normal">some text to fill in the space</p>
+    <p class="positive">some more text to fill some more space</p>
+    <p class="negative">and a little bit more text, you know, to fill some more space</p>
+</div>
+
+<div class="wordSpacing">
+    <p class="normal">some text to fill in the space</p>
+    <p class="positive">some more text to fill some more space</p>
+    <p class="negative">and a little bit more text, you know, to fill some more space</p>
+</div>
+
+<div class="bproperties">
+
+    <p class="textBorder">some text</p>
+
+</div>
+
+<div class="bgimage"> </div>
+
+<div class="bgimage2"> </div>
+
+<div class="listStyle">
+
+    <ol class="lower-alpha">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ol>
+
+    <ul class="circle">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+
+    <ul class="square">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+
+    </ul>
+
+    <ul class="position">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+
+    <ul class="all">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+</div>
+
+<div class="table">
+    <table border="1" class="first" >
+        <caption>Some of our Courses</caption>
+        <tr>
+            <th>Course name</th>
+            <th>Lessons</th>
+            <th>Quizzes</th>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>81</td>
+            <td>363</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>48</td>
+            <td>144</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>38</td>
+            <td>119</td>
+        </tr>
+    </table>
+
+    <table class="secound" border="1">
+        <tr>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td></td>
+        </tr>
+      </table>
+
+      
+
+</div>
+
+<div class="tableSecond">
+
+    <p>Table-layout is set to <strong>auto</strong></p>
+<table class="auto"> <!--The table layout is set to auto by default.-->
+  <tr>
+    <td width="10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+<p>Table-layout is set to <strong>fixed</strong></p>
+<table class="fixed">
+  <tr>
+    <td width="10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+</div>
+
+<div class="links">
+
+    <div class="hover">
+        <p><a href="http://www.sololearn.com" target="_blank">This link is hovered when we mouse over it</a></p>
+    </div>
+
+</div>
+
+<div class="mouseCursor">
+
+    <span class="cursorHelp">Do you need any help?</span>
+
+</div>
+
+<!--Positioning and Layout-->
+<div class="displayProperties">
+    <div class="block">
+        <span>First paragraph.</span>
+        <span>Second paragraph.</span>
+        <span>Third paragraph.</span>
+        <span>Fourth paragraph.</span>
+        <span>Fifth paragraph.</span>
+    </div>
+    <div class="inline">
+        <span>First paragraph.</span>
+        <span>Second paragraph.</span>
+        <span>Third paragraph.</span>
+        <span>Fourth paragraph.</span>
+        <span>Fifth paragraph.</span>
+    </div>
+    <div class="none">
+        <span>First paragraph.</span>
+        <span>Second paragraph.</span>
+        <span>Third paragraph.</span>
+        <span>Fourth paragraph.</span>
+        <span>Fifth paragraph.</span>
+    </div>
+</div>
+
+<div class="visibility">
+    <div class="hidden">
+        This text will not display in browser.
+     </div>
+     <p>
+        The space to the right of this paragraph is empty because 
+        the visibility of the div element is set to hidden.
+     </p>
+</div>
+
+<div class="position">
+    <p class="static">This paragraph has a static position.</p>
+    <p class="fixed">Fixed position.</p>
+    <p>
+    some text
+    <span class="relative">Relative</span>some text
+    <span class="relative">Relative</span>some text
+    <span class="relative">Relative</span>some text
+    </p>
+    <p class="absolute">Absolute does not exist any more</p>
+</div>
+
+<!--float-->
+
+<div class="floating">
+    <div class="float">
+    <p><img src="/slike/malaSlika.jpg" />
+        This paragraph has an image that is floated to the <strong>right.</strong> 
+        It is highly recommended to add a margin to images so that the text does 
+        not get too close to the image. If you want your text to be easily read, you 
+        should always add a few pixels between words and borders, images, 
+        and other content. 
+    </p>
+    </div>
+    <div class="floatnexttoeachother">
+        <p><img src="/slike/malaSlika.jpg" />
+            This paragraph has an image that is floated to the <strong>right.</strong> 
+            It is highly recommended to add a margin to images so that the text does 
+            not get too close to the image. If you want your text to be easily read, you 
+            should always add a few pixels between words and borders, images, 
+            and other content. 
+        </p>
+    </div>
+    <div class="floatclean">
+        This paragraph is above the div element 
+        and is not affected by the float right property. 
+        <br/><br/>
+        <section class="floati">
+        <img src="/slike/malaSlika.jpg" />
+        </section>
+        This paragraph comes after the div element 
+        and is affected by the float right property. 
+        <br/><br class="cleari"/>
+        This paragraph is out of the floating group 
+        and is not affected by the float right property.
+        <br/> <br/>
+    </div>
+
+    <div class="floatOverflow">
+        This text is inside the div element, which has a blue 
+        background color and is floated to the left. We set a specific 
+        height and width for the div element, and as you can see, 
+        the content cannot fit.
+    </div>
+
+</div>
+
+<div class="z_index">
+    <div class="yellow">First </div>
+    <div class="red">Second </div>
+</div>
+
+<!--CSS3-->
+
+<div class="borderr">border radius</div>
+<div class="border0">corners of the border</div>
+<div class="bCircle">Circle with borders</div>
+
+<div class="box-shadow">
+    Box shadow
+</div>
+
+<div class="inner-shadow">
+    Inner shadow
+</div>
+
+<div class="allShadow">
+    All shadow
+</div>
+
+<div class="transparentEffect">
+    Transparent Effects
+    <ul>
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">DISCUSS</a></li>
+        <li><a href="#">TOP LEARNERS</a></li>
+        <li><a href="#">BLOG</a></li>
+    </ul>
+</div>
+
+<div class="textShadow">
+    Text for shadow
+</div>
+
+<div id="PseudoClasses">
+    <p><b>First paragraph</b></p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+    <p>Fourth paragraph</p>
+ </div>
+
+ <div class="firstLine">
+    The following example demonstrates how to use the ::first-line element to add special effect to the first line of elements in the document.
+ </div>
+
+<div class="pseudoBefore">
+    <p>You can insert text, images, and other resources using <strong>:before </strong>pseudo element.</p>
+</div>
+
+<div class="wrap">
+    This paragraph has a long word: thisisaverylongwordbutyoucantfinditinthedictionary.
+</div>
+
+<div class="fontFace">
+    Some text
+</div>
+
+<!--Gradients & Backgrounds-->
+
+<div class="linearGradients">
+    Linear Gradients
+</div>
+
+<div class="multipleGradients">
+    Multiple Gradients
+</div>
+
+<div class="from-side-to-side"> </div>
+
+<div class="background-clip">
+    <div class="first"></div>
+    <div class="second"> </div>
+</div>
+
+<div class="MultipleBackgrounds"></div>
+
+<div class="MultipleBackgrounds2"></div>
+
+
+<div class="opacity">
+    <img id="img1" src="http://www.sololearn.com/uploads/css_logo.png" />
+    <br />
+    <img id="img2" src="http://www.sololearn.com/uploads/css_logo.png" />
+    <br />
+    <img id="img3" src="http://www.sololearn.com/uploads/css_logo.png" />
+</div>
+
+<!--Transitions & Transforms-->
+
+<div class="transitions">Transitions:width</div>
+<div class="transforms">Transform - rotate</div>
+<div class="translate">Transform - translate <br>click on me</div>
+<div class="skew">Transform - Skew <br>click on me</div>
+<div class="scale">Transform - scale</div>
+<div class="multipletrans">Trans - multiple <br> rotate and translate</div>
+<div class="keyframes">Keyframes animation</div>
+<div class="animation">Animation</div>
+<div class="alltreed">
+<div class="transformsX">Y transform</div>
+<div class="transformsY">X transform</div>
+<div class="transformsZ">Z transform</div>
+<div class="transformd">3D transform</div>
+<div class="perspective">
+    <div class="divinside">
+        The div that starwars rotate
+    </div>
+</div>
+</div>
+
+
+<div class="drop-shadow">Drop shadow</div>
+<!--Grayscale--> 
+<div class="GrayScale"> 
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>  
+
+<div class="Sepia">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+<div class="saturate">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+<div class="hue-rotate">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+<div class="invert">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+<div class="opacity">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+<div class="brightness">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+<div class="contrast">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+<div class="blur">
+    <img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+</div>
+
+
+</body>
+</html>
